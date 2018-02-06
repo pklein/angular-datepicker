@@ -95,7 +95,7 @@ function processTemplateUrl(content, options, targetDir) {
       quote = '"';
     } else {
       url = exec[2];
-      quote = '\'';
+      quote = '`';
     }
 
     let file = fs.readFileSync(getAbsoluteUrl(url, options, targetDir),
